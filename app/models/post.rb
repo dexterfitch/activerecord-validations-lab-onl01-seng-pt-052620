@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
   # validate :clickbait?
 
   def clickbait?
-    content.include?(["Won't Believe", "Secret", "Top %w(/\d/)", "Guess"])
+    content.include?("Won't Believe") || content.include?("Secret") || content.include?("Top %w(/\d/)") || content.include?("Guess")
   end
 
 end
