@@ -7,5 +7,5 @@ class Post < ActiveRecord::Base
   def clickbait?
     content.include?("Won't Believe", "Secret", "Top ", "Guess")
   end
-  
+
 end
